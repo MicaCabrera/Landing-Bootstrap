@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Circular';
+  src: url('fonts/Circular_M.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CircularBook';
+  src: url('fonts/Circular_Book.ttf') format('truetype');
+}
+
+:root {
+  --main-color: #3871ff;
+  --secondary-color: #283345;
+  --main-font: 'CircularBook', 'Circular', 'Montserrat';
+}
+
+* {
+  font-family: var(--main-font);
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.icon-nav {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.548);
+}
+
+.changeNav {
+  color: white;
+}
+
+.section-index {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-color {
+  background-color: var(--main-color);
+}
+
+.title-index {
+  width: 350px;
+}
+
+.section-background {
+  background-color: var(--secondary-color);
+  background-image: url(image/asset-background.jpg);
+  background-size: 32%;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.section-style {
+  background-color: var(--main-color);
+}
+
+.bi-credit-card-2-front {
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.02); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-services {
+  bottom: -50px;
+  width: 100%;
+}
+
+img {
+  width: 400px;
+  height: auto px;
+}
+
+.icons {
+  font-size: 2rem;
+  padding: 20px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  color: white;
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.fab {
+  color: white;
+}
+
+.logos {
+  width: 40px;
+  height: auto;
+}
+
+img {
+  width: 70%;
+}
+
+.container-cards-services {
+  background-color: var(--secondary-color);
+}
+
+.cards-style {
+  background-color: var(--main-color);
+  padding: 20px;
+}
+
+.card-text {
+  line-height: 2em;
+}
+
+.b-cards {
+  width: 280px;
+}
+
+.position-relative {
+  top: 70px;
+}
+
+.footer-style {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.social-icons {
+  color: gray;
+}
+
+.social-icons i {
+  padding-right: 10px;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+@keyframes beat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.loading-overlay {
+  animation: beat 2s infinite;
+}
+
+/*Micaela Cabrera*/
